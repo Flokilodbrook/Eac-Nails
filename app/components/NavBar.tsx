@@ -72,7 +72,7 @@ export default function NavBar() {
 
       {/* Barra de promociones */}
       <div className="w-full bg-gray-200 overflow-hidden text-xl">
-        <div className="animate-marquee whitespace-nowrap py-2 font-medium text-gray-700">
+        <div className="animate-marquee whitespace-nowrap py-2 font-medium text-gray-700 text-pink-400">
           <span className="mx-8">🎉 10% de descuento en uñas acrílicas</span>
           <span className="mx-8">🚚 Envío gratis en compras mayores a $500</span>
           <span className="mx-8">💅 2x1 en esmaltes seleccionados</span>
