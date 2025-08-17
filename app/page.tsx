@@ -9,7 +9,7 @@ export default function Home() {
         src="/logo/fondo_eac_nails.jpeg"
         alt="Fondo EAC Nails"
         fill
-        className="object-cover opacity-50"
+        className="object-cover opacity-60"
       />
 
       {/* Texto encima de la imagen */}

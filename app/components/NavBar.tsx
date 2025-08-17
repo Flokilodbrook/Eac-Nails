@@ -31,8 +31,8 @@ export default function NavBar() {
           </Link>
 
           {/* Menú */}
-          <div className="hidden md:flex items-center space-x-8 font-medium text-gray-700">
-            <Link href="/" className="hover:text-pink-500 transition">Inicio</Link>
+          <div className="hidden md:flex items-center space-x-8 font-medium text-gray-700 text-xl">
+            <Link href="/" className="hover:text-pink-500 hover:text-2xl transition ">Inicio</Link>
             <Link href="/productos" className="hover:text-pink-500 transition">Productos</Link>
           </div>
 
