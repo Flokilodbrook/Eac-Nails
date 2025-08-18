@@ -33,7 +33,7 @@ export default function NavBar() {
           {/* Menú */}
           <div className="hidden md:flex items-center space-x-8 font-medium text-gray-700 text-xl">
             <Link href="/" className="hover:text-pink-500 hover:text-2xl transition ">Inicio</Link>
-            <Link href="/productos" className="hover:text-pink-500 transition">Productos</Link>
+            <Link href="/productos" className="hover:text-pink-500 hover:text-2xl transition">Productos</Link>
           </div>
 
           {/* Buscador */}
@@ -53,7 +53,7 @@ export default function NavBar() {
             {/* Carrito */}
             <Link href="/carrito" className="relative">
               <ShoppingCart className="w-7 h-7 text-gray-600 hover:text-pink-500 transition" />
-              <span className="absolute -top-2 -right-2 bg-pink-400 text-white text-xs px-1.5 py-0.5 rounded-full shadow-md">
+              <span className="absolute -top-2 -right-2 bg-gray-700 text-white px-1.5 py-0.5 text-xs rounded-full font-sans shadow-md">
                 2
               </span>
             </Link>

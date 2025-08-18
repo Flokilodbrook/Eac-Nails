@@ -14,21 +14,44 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Category {
-  id_category   Int      @id @default(autoincrement())
-  name_category String
-  slug_category String
-  product       Product[]
+// Categorías de productos
+model ProductCategory {
+  id       Int       @id @default(autoincrement())
+  name     String
+  slug     String
+  products Product[]
 }
 
+// Productos físicos
 model Product {
-  id_product    Int      @id @default(autoincrement())
-  name_product  String
-  price_product Float
-  image_product String
-  categoryId    Int
-  category      Category @relation(fields: [categoryId], references: [id_category])
+  id         Int       @id @default(autoincrement())
+  name       String
+  price      Float
+  image      String
+  categoryId Int
+  category   ProductCategory @relation(fields: [categoryId], references: [id])
 }
+
+// Categorías de servicios
+model ServiceCategory {
+  id       Int        @id @default(autoincrement())
+  name     String
+  slug     String
+  services NailStyle[]
+}
+
+// Servicios (estilos de uñas, manicure, etc.)
+model NailStyle {
+  id         Int       @id @default(autoincrement())
+  name       String
+  price      Float
+  image      String
+  categoryId Int
+  category   ServiceCategory @relation(fields: [categoryId], references: [id])
+}
+
+
+
 
 
 

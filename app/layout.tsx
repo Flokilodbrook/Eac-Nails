@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
-import NavBar from "./components/NavBar";
+import NavBar from "./components/ui/NavBar";
+import Footer from "./components/ui/Footer";
+
 
 //Definicion de fuentes de letra
 
 import { Italiana } from "next/font/google";
-import Footer from "./components/Footer";
 
 const italiana = Italiana({
   weight: "400", // solo tiene 400
