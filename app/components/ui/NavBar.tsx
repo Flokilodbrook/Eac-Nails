@@ -61,7 +61,7 @@ export default function NavBar() {
             {/* Login */}
             <Link
               href="/login"
-              className="flex items-center gap-2 hover:bg-pink-300 text-gray-700 px-3 py-2 rounded-lg transition"
+              className="flex items-center gap-2 hover:bg-pink-400 text-gray-700 px-3 py-2 rounded-lg transition"
             >
               <User className="w-7 h-7" />
               <span className="hidden md:inline">Login</span>
@@ -72,10 +72,10 @@ export default function NavBar() {
 
       {/* Barra de promociones */}
       <div className="w-full bg-gray-200 overflow-hidden text-xl">
-        <div className="animate-marquee whitespace-nowrap py-2 font-medium text-gray-700 text-pink-400">
-          <span className="mx-8">🎉 10% de descuento en uñas acrílicas</span>
-          <span className="mx-8">🚚 Envío gratis en compras mayores a $500</span>
-          <span className="mx-8">💅 2x1 en esmaltes seleccionados</span>
+        <div className="animate-marquee whitespace-nowrap py-2 font-bold  font-sans x|">
+          <span className="mx-8"> 10% de descuento en uñas acrílicas</span>
+          <span className="mx-8"> Envío gratis en compras mayores a $500</span>
+          <span className="mx-8"> 2x1 en esmaltes seleccionados</span>
         </div>
       </div>
 
